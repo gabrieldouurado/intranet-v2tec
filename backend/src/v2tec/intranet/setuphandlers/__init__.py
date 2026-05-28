@@ -24,7 +24,6 @@ class HiddenProfiles:
 def fecha_intranet(portal_setup: SetupTool):
     """Aplica novo workflow para a intranet."""
     wf_tool: WorkflowTool = api.portal.get_tool("portal_workflow")
-    # breakpoint()
     wf_tool.updateRoleMappings()
     # Loga que modificação foi realizada
     logger.info("Permissões de workflow atualizadas")
