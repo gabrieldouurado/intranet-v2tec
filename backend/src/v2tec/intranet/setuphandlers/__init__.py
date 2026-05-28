@@ -5,6 +5,7 @@ from Products.GenericSetup.tool import SetupTool
 from v2tec.intranet import logger
 from zope.interface import implementer
 
+
 @implementer(INonInstallable)
 class HiddenProfiles:
     def getNonInstallableProfiles(self):
@@ -18,7 +19,8 @@ class HiddenProfiles:
         return [
             "v2tec.intranet.upgrades",
         ]
-    
+
+
 def fecha_intranet(portal_setup: SetupTool):
     """Aplica novo workflow para a intranet."""
     wf_tool: WorkflowTool = api.portal.get_tool("portal_workflow")
