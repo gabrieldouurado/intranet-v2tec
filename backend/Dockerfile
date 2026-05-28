@@ -54,3 +54,5 @@ RUN <<EOT
     ln -s /data /app/var
     chown -R 500:500 /data
 EOT
+
+ARG PYTHON_VERSION=undefined
