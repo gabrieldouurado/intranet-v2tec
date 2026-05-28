@@ -1,0 +1,22 @@
+{
+    "hostname": "intranet.v2solucoes.com.br",
+    "email": "joao.dourado@v2solucoes.com.br",
+    "devops_storage": "relstorage",
+    "author": "Jo\u00e3o Gabriel Dourado",
+    "devops_cache": false,
+    "project_slug": "intranet-v2tec",
+    "github_organization": "gabrieldouurado",
+    "devops_gha_deploy": false,
+    "frontend_addon_name": "volto-v2tec-intranet",
+    "description": "Intranet utilizando Plone 6.2",
+    "title": "Intranet V2Tec",
+    "volto_version": "19.0.0",
+    "initialize_documentation": false,
+    "plone_version": "6.2.0",
+    "devops_ansible": false,
+    "use_prerelease_versions": false,
+    "language_code": "pt-br",
+    "container_registry": "github",
+    "python_package_name": "v2tec.intranet",
+    "__template__": "project"
+}
