@@ -1,8 +1,8 @@
+from AccessControl import Unauthorized
 from plone import api
 from plone.dexterity.fti import DexterityFTI
 from v2tec.intranet.content.area import Area
 from zope.component import createObject
-from AccessControl import Unauthorized
 
 import pytest
 
