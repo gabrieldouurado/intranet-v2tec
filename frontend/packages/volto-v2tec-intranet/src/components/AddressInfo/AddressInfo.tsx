@@ -29,10 +29,11 @@ const AddressInfo: React.FC<AddressInfoProps> = ({ content }) => {
           <span className="value">{cidade}</span>
         </Container>
       )}
-      {estado && (
-        <Container className="estado">
+      {cidade && estado && (
+        <Container>
           <span className="label">Estado</span>:{' '}
-          <span className="value">{estado}</span>
+          <span className="cidade">{cidade}</span> {' - '}
+          <span className="estado">{estado.token}</span>
         </Container>
       )}
       <Container className="cep">
