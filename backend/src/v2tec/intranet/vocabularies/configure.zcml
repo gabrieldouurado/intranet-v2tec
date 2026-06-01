@@ -1,4 +1,8 @@
 <configure xmlns="http://namespaces.zope.org/zope">
+  <utility
+      name="v2tec.intranet.vocabulary.estados"
+      component=".estados.vocab_estados"
+      />
 
   <!-- -*- extra stuff goes here -*- -->
 

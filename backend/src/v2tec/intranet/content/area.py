@@ -62,9 +62,10 @@ class IArea(model.Schema):
         required=False,
     )
 
-    estado = schema.TextLine(
+    estado = schema.Choice(
         title=_("Estado"),
         description=_("Informe o estado da área"),
+        vocabulary="v2tec.intranet.vocabulary.estados",
         required=False,
     )
 
