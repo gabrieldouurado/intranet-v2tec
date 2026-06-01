@@ -23,15 +23,9 @@ const AddressInfo: React.FC<AddressInfoProps> = ({ content }) => {
           <span className="value">{complemento}</span>
         </Container>
       )}
-      {cidade && (
-        <Container className="cidade">
-          <span className="label">Cidade</span>:{' '}
-          <span className="value">{cidade}</span>
-        </Container>
-      )}
       {cidade && estado && (
         <Container>
-          <span className="label">Estado</span>:{' '}
+          <span className="label">Cidade e Estado</span>:{' '}
           <span className="cidade">{cidade}</span> {' - '}
           <span className="estado">{estado.token}</span>
         </Container>
