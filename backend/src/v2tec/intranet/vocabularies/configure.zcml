@@ -4,6 +4,11 @@
       component=".estados.vocab_estados"
       />
 
+  <utility
+      name="v2tec.intranet.vocabulary.categorias"
+      component=".categorias.vocab_categorias"
+      />
+
   <!-- -*- extra stuff goes here -*- -->
 
 </configure>

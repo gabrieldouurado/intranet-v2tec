@@ -14,18 +14,21 @@ const PessoaView: React.FC<PessoaViewProps> = (props) => {
   const { content } = props;
 
   return (
-    <Container id="page-document" className="view-wrapper area-view">
+    <Container id="page-document" className="view-wrapper pessoa-view">
       {content.image && (
-        <Container className={'image'}>
-          <Image
-            className="documentImage ui right floated image"
-            alt={content.title}
-            title={content.title}
-            item={content}
-            imageField="image"
-            responsive={true}
-          />
-        </Container>
+        <Image
+          className="documentImage ui right floated image"
+          alt={content.title}
+          title={content.title}
+          item={content}
+          imageField="image"
+          responsive={true}
+        />
+      )}
+      {content.categoria && (
+        <span className={`categoria categoria-${content.categoria.token}`}>
+          {content.categoria.title}
+        </span>
       )}
       <h1 className="documentFirstHeading">{content.title}</h1>
       {content.description && (
