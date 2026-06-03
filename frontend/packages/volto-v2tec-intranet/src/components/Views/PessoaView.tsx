@@ -4,6 +4,7 @@ import { Container } from '@plone/components';
 import ContactInfo from 'volto-v2tec-intranet/components/ContactInfo/ContactInfo';
 import AddressInfo from 'volto-v2tec-intranet/components/AddressInfo/AddressInfo';
 import type { Pessoa } from 'volto-v2tec-intranet/types/content';
+import UniversalLink from '@plone/volto/components/manage/UniversalLink/UniversalLink';
 
 interface PessoaViewProps {
   content: Pessoa;
@@ -33,6 +34,13 @@ const PessoaView: React.FC<PessoaViewProps> = (props) => {
       <h1 className="documentFirstHeading">{content.title}</h1>
       {content.description && (
         <p className="documentDescription">{content.description}</p>
+      )}
+      {content.area && (
+        <Container className="area-container">
+          <UniversalLink className={'area'} item={content.area}>
+            {content.area.title}
+          </UniversalLink>
+        </Container>
       )}
       <ContactInfo content={content} />
       <AddressInfo content={content} />
