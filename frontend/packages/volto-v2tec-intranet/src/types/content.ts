@@ -1,4 +1,4 @@
-import type { Content } from '@plone/types';
+import type { Content, RelatedItem } from '@plone/types';
 
 export interface Area extends Content {
   title: string;
@@ -18,6 +18,7 @@ export interface Area extends Content {
 export interface Pessoa extends Content {
   title: string;
   description: string;
+  area?: RelatedItem;
   categoria?: {
     token: string;
     title: string;
@@ -32,8 +33,4 @@ export interface Pessoa extends Content {
     title: string;
   };
   cep?: string;
-  area?: {
-    token: string;
-    title: string;
-  };
 }

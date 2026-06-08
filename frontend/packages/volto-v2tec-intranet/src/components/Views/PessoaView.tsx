@@ -3,6 +3,7 @@ import Image from '@plone/volto/components/theme/Image/Image';
 import { Container } from '@plone/components';
 import ContactInfo from 'volto-v2tec-intranet/components/ContactInfo/ContactInfo';
 import AddressInfo from 'volto-v2tec-intranet/components/AddressInfo/AddressInfo';
+import AreaInfo from 'volto-v2tec-intranet/components/AreaInfo/AreaInfo';
 import type { Pessoa } from 'volto-v2tec-intranet/types/content';
 import UniversalLink from '@plone/volto/components/manage/UniversalLink/UniversalLink';
 
@@ -36,9 +37,10 @@ const PessoaView: React.FC<PessoaViewProps> = (props) => {
         <p className="documentDescription">{content.description}</p>
       )}
       {content.area && (
-        <Container className="area-container">
+        <Container narrow className="area-container">
           <UniversalLink className={'area'} item={content.area}>
             {content.area.title}
+            <AreaInfo content={content.area} icon={true} />
           </UniversalLink>
         </Container>
       )}
