@@ -42,8 +42,8 @@ a {
   align-items: center;
   padding: $spacing-small;
   margin: $spacing-small 0;
-  background-color: var(--secondary-color);
-  color: var(--primary-color-foreground);
+  background-color: var(--theme-high-contrast-color, var(--secondary-color));
+  color: var(--theme-foreground-color, var(--primary-color-foreground));
   gap: 0.1rem;
   .icon {
     max-width: 20% !important;
@@ -52,14 +52,7 @@ a {
     display: flex;
     width: 80% !important;
     flex-direction: column;
-    align-items: flex-start;
-    .title {
-      margin: 0 0 $spacing-small 0;
-      @include text-heading-h3();
-    }
-    .description {
-      margin-bottom: 0;
-      @include body-text();
-    }
+    align-items: left;
+    gap: 0.25rem;
   }
 }
