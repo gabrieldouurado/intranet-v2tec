@@ -1,0 +1,26 @@
+{
+  "@type": "listing",
+  "headline": "Sub-Áreas",
+  "headlineTag": "h2",
+  "querystring": {
+    "query": [
+      {
+        "i": "path",
+        "o": "plone.app.querystring.operation.string.relativePath",
+        "v": "./"
+      },
+      {
+        "i": "portal_type",
+        "o": "plone.app.querystring.operation.selection.any",
+        "v": [
+          "Area"
+        ]
+      }
+    ],
+    "sort_on": "getObjPositionInParent",
+    "sort_order": "ascending"
+  },
+  "styles": {},
+  "theme": "grey",
+  "variation": "grid"
+}
