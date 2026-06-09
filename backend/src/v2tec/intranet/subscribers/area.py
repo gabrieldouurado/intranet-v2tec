@@ -32,3 +32,8 @@ def added(obj: Area, event: ObjectAddedEvent):
     """Post creation handler for Area."""
     _update_excluded_from_nav(obj)
     _create_editors_group(obj)
+
+
+def modified(obj: Area, event: ObjectAddedEvent):
+    """Post modification handler for Area."""
+    _update_excluded_from_nav(obj)
